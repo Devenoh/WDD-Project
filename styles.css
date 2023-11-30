@@ -1,5 +1,17 @@
 /*styles.css*/
 
-.button{
-	color: blue;
+.h1{
+	text-color: white;
+}
+
+.h2{
+	text-color: white;
+}
+
+.p{
+	text-color: white;
+}
+
+ img {
+  border: 5px solid #555;
 }
