@@ -1,14 +1,15 @@
 // javascript.js
   const allQuestionsAndAnswers = [
-    { question: "What is your age?", answer: ["20", "twenty"] },
-    { question: "What is your favorite color?", answer: ["blue"] },
-	{ question: "What is your favorite color?1", answer: ["blue"] },
-	{ question: "What is your favorite color?2", answer: ["blue"] },
-	{ question: "What is your favorite color?3", answer: ["blue"] },
-	{ question: "What is your favorite color?4", answer: ["blue"] },
-	{ question: "What is your favorite color?5", answer: ["blue"] },
-	
-	
+    { question: "What are hydroelectric plants powered by?", answer: ["water", "moving water", "tides", "resevoirs"] },
+    { question: "Hydroelectric plants store and control water with structures called...", answer: ["dams", "dam"] },
+	{ question: "The type of energy in the moving water is called _______ energy.", answer: ["kinetic"] },
+	{ question: "When water flows through a hydroelectric plant, it passes through a _______.", answer: ["turbine"] },
+	{ question: "In what country is the largest hydroelectric plant located?", answer: ["china"] },
+	{ question: "A ______ _______ system uses extra electricity to move used water back into the resevoir.", answer: ["pumped storage"] },
+	{ question: "What is the biggest hydroelectric plant in the world?", answer: ["three gorges", "three gorges dam"] },
+	{ question: "How many hydroelectric plants are in Ireland?", answer: ["26", "twenty-six", "twenty six"] },
+	{ question: "In what year was the Ardnacrusha hydroelectric plant completed?", answer: ["1929"] },
+	{ question: "What is the biggest hydroelectric plant in Ireland?", answer: ["ardnacrusha", "ardnacrusha power plant"] }
   ];
 
   let remainingQuestions = [];
@@ -31,7 +32,7 @@
       document.getElementById("answer").value = ""; // Clear previous answer
       document.getElementById("feedback").textContent = ""; // Clear previous feedback
     } else {
-      const scoreMessage = `Game Over! Thank you for playing. Your score: ${correctAnswers} out of 5.`;
+      const scoreMessage = `Game Over! Thank you for playing. You scored ${correctAnswers} out of 5 questions. Would you like to play again?`;
       questionElement.textContent = scoreMessage;
     }
   }
@@ -44,7 +45,7 @@
       document.getElementById("feedback").textContent = "Correct!";
       correctAnswers++;
     } else {
-      document.getElementById("feedback").textContent = "Incorrect. The correct answer is: " + correctAnswerArray;
+      document.getElementById("feedback").textContent = "Incorrect. The correct answer is " + correctAnswerArray;
     }
 
     setTimeout(() => {

@@ -13,9 +13,15 @@ h3.header3{
 }
 
 h1.title{
-	color: white;
+	color: #75FFA7;
 	text-shadow: 1px 1px 2px green;
-	
+	font-family: 'Halogen Gas Lights', sans-serif;
+}
+
+h4.title{
+	color: #75FFA7;
+	text-shadow: 1px 1px 2px green;
+	font-family: 'Halogen Gas Lights', sans-serif;
 }
 
 .mainText{
@@ -64,7 +70,8 @@ body.background{
 
 .question-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
+	width: 10%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -79,8 +86,19 @@ body.background{
 	font-size: 16px;
 }
 
+.center-wrapper {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+
 label.mainText {
 	color: white;
 	text-shadow: 1px 1px 2px black;
 	text-align: justify; /*Justify stretches the lines so each gap has equal width.*/
+}
+
+.question {
+	float:middle;
 }

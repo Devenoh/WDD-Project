@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<link rel="shortcut icon" href="lightning.png"> <!-- This is where the tab icon goes. .png is easier to find but .ico also works! -->
     <meta charset="utf-8"> <!-- this specifices what character encoding to use. -->
 	<!-- People like utf-8 because it covers almost all the characters and symbols in many different languages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vineta Home Page</title>
+	<link href="https://fonts.cdnfonts.com/css/halogen-gas-lights" rel="stylesheet"> <!-- This is a font I couldn't find on google fonts. -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<!--   ^ This code is from Bootstrap. -->
+	<!--   ^ This CSS is from Bootstrap. -->
 	<!--  ^ So Bootstrap has it's own CSS and JS scripts that I am using for the navbar. -->
 	<!-- ^ The integrity is for security purposes. Should the CSS or JS files ever get changed, the browser will check them and NOT USE THE CODE. -->
+	<link rel="stylesheet" href="styles.css"> <!-- This is my own CSS. -->
 	
-	<link rel="stylesheet" href="styles.css">
-	<!-- ^ This is the link to my own CSS file! -->
   </head>
   <body class="background">
     <div class="container-fluid"> 
-		<!-- So the Navbar goes here. It links to the other websites in the project. -->
-		<div class="navigation">
-			<div id="navigationLogo">
-			<a class="logo" href="#"><h4>Vineta</h4></a>
+		
+		<div class="navigation">	<!-- So the Navbar goes here. It links to the other websites in the project. -->
+			<div id="navigationLogo"> <!-- This is where the logo "Vineta" shows up in the navbar. It just brings you to the home page. -->
+			<a href="#"><h4 class="title">Vineta</h4></a> <!-- You can put tags inside anchors to make them more responsive. works with <img> tags too. -->
 			</div>
-			<a class="home" href="#h">Home</a>
+			<a class="home" href="#h">Home</a> <!-- Anchor tags take you to other websites. -->
 			<a href="#">Game</a>
 			<a href="#">Gallery</a>
-			<a href="#">Resources</a>
+			<a href="#">Resources</a>-
 		</div> 
 		
-		<!-- This is the header. -->
+		<!-- This is the header at the top of the page. -->
 		<div class="row">
 			<div class="row text-center">
-				<div class="col-sm-12"> <!-- Columns always need to add up to 12, no more no less. 1x12 = 12 so it works :))))))))))))) -->
-				<h1 class="title">Vineta.</h1>			
+				<div class="col-sm-12"> <!-- Columns always need to add up to 12, no more no less. 1x12 = 12 so it works :> -->
+				<h1 class="title">Vineta</h1>			
 				<h2 class="header2">The Irish voice of sustainable Hydroelectric power. </h2> 	
 				</div>
 			</div>
