@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Question Game 5</title>
+  <style>
+    
+    .question-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="question-container">
+  <h2>Random Question Game</h2>
+  <form onsubmit="return false" id="question-form">
+    <div id="question"></div>
+    <label for="answer">Your Answer:</label>
+    <input type="text" id="answer" required>
+    <br>
+    <button type="button" id="button" onclick="checkAnswer()">Check Answer</button>
+    <div id="feedback" class="feedback"></div>
+  </form>
+</div>
+
+<script>
+  const allQuestionsAndAnswers = [
+    { question: "What is your age?", answer: ["20", "twenty"] },
+    { question: "What is your favorite color?", answer: ["blue"] }
+	
+  ];
+
+  let remainingQuestions = [];
+  let currentQuestionIndex = 0;
+  let correctAnswers = 0;
+
+  function getRandomQuestions() {
+    const allQuestions = [...allQuestionsAndAnswers];
+    for (let i = 0; i < 5; i++) {
+      const randomIndex = Math.floor(Math.random() * allQuestions.length);
+      remainingQuestions.push(allQuestions.splice(randomIndex, 1)[0]);
+    }
+  }
+
+  function displayQuestion() {
+    const questionElement = document.getElementById("question");
+    const questionObject = remainingQuestions[currentQuestionIndex];
+    if (questionObject !== undefined) {
+      questionElement.textContent = questionObject.question;
+      document.getElementById("answer").value = ""; // Clear previous answer
+      document.getElementById("feedback").textContent = ""; // Clear previous feedback
+    } else {
+      const scoreMessage = `Game Over! Thank you for playing. Your score: ${correctAnswers} out of 5.`;
+      questionElement.textContent = scoreMessage;
+    }
+  }
+
+  function checkAnswer() {
+    const userAnswer = document.getElementById("answer").value.toLowerCase();
+    const correctAnswerArray = remainingQuestions[currentQuestionIndex].answer;
+
+    if (correctAnswerArray.includes(userAnswer)) {
+      document.getElementById("feedback").textContent = "Correct!";
+      correctAnswers++;
+    } else {
+      document.getElementById("feedback").textContent = "Incorrect. The correct answer is: " + correctAnswerArray;
+    }
+
+    setTimeout(() => {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < 5) {
+        displayQuestion();
+      } else {
+        displayQuestion(); // Call it one more time to display the score message
+      }
+    }, 2000); // 2000 milliseconds (2 seconds) delay before displaying the next question
+  }
+
+
+  // Listen for Enter key press
+  document.getElementById("answer").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+      checkAnswer();
+    } 
+  });
+
+
+  // Initial setup
+  getRandomQuestions();
+  displayQuestion();
+</script>
+
+</body>
+</html>

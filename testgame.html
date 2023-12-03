@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Question Game 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #question-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="question-container">
+  <h2>Random Question Game</h2>
+  <form id="question-form">
+    <div id="question"></div>
+    <label for="answer">Your Answer:</label>
+    <input type="text" id="answer" required>
+    <br>
+    <button type="button" onclick="checkAnswer()">Check Answer</button>
+    <div id="feedback" class="feedback"></div>
+  </form>
+</div>
+
+<script>
+  const allQuestionsAndAnswers = [
+    { question: "What is your age?", answer: "20" },
+    { question: "What is your favorite color?", answer: "blue" },
+    { question: "What is the capital of France?", answer: "paris" },
+    { question: "What is the square root of 25?", answer: "5" },
+    { question: "What is your favorite programming language?", answer: "HTML" },
+    { question: "What is the largest mammal in the world?", answer: "blue whale" },
+    { question: "What is the sum of 2 + 2?", answer: "4" },
+    { question: "What is the capital of Japan?", answer: "tokyo" },
+    { question: "What is the primary use of HTML?", answer: "coding" },
+    { question: "What is the currency of Brazil?", answer: "real" },
+    { question: "What is the capital of Italy?", answer: "rome" },
+    { question: "What is the square root of 64?", answer: "8" },
+    { question: "What is the largest planet in our solar system?", answer: "jupiter" },
+    { question: "What is the sum of 3 + 3?", answer: "6" },
+    { question: "What is the capital of Canada?", answer: "ottawa" },
+    { question: "What is the primary use of CSS?", answer: "styling" },
+    { question: "What is the currency of Japan?", answer: "yen" },
+    { question: "What is the square root of 81?", answer: "9" },
+    { question: "What is the largest ocean on Earth?", answer: "pacific" },
+    { question: "What is the sum of 5 + 5?", answer: "10" }
+  ];
+
+  let remainingQuestions = [];
+  let currentQuestionIndex = 0;
+  let correctAnswers = 0;
+
+  function getRandomQuestions() {
+    const allQuestions = [...allQuestionsAndAnswers];
+    for (let i = 0; i < 5; i++) {
+      const randomIndex = Math.floor(Math.random() * allQuestions.length);
+      remainingQuestions.push(allQuestions.splice(randomIndex, 1)[0]);
+    }
+  }
+
+  function displayQuestion() {
+    const questionElement = document.getElementById("question");
+    const questionObject = remainingQuestions[currentQuestionIndex];
+    if (questionObject !== undefined) {
+      questionElement.textContent = questionObject.question;
+      document.getElementById("answer").value = ""; // Clear previous answer
+      document.getElementById("feedback").textContent = ""; // Clear previous feedback
+    } else {
+      const scoreMessage = `Game Over! Thank you for playing. You scored ${correctAnswers} out of 5 questions. `;
+      questionElement.textContent = scoreMessage;
+    }
+  }
+
+  function checkAnswer() {
+    const userAnswer = document.getElementById("answer").value.toLowerCase();
+    const correctAnswer = remainingQuestions[currentQuestionIndex].answer.toLowerCase();
+
+    if (correctAnswer === "" || userAnswer === correctAnswer) {
+      document.getElementById("feedback").textContent = "Correct!";
+      correctAnswers++;
+    } else {
+      document.getElementById("feedback").textContent = "Incorrect. The correct answer is: " + correctAnswer;
+    }
+
+    setTimeout(() => {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < 5) {
+        displayQuestion();
+      } else {
+        displayQuestion(); // Call it one more time to display the score message
+      }
+    }, 2000); // 2000 milliseconds (2 seconds) delay before displaying the next question
+  }
+
+  // Initial setup
+  getRandomQuestions();
+  displayQuestion();
+</script>
+
+</body>
+</html>
