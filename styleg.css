@@ -1,4 +1,4 @@
-/*styles.css*/
+/*styleg.css*/
 
 h2.header2{
 	color: white;
@@ -29,11 +29,12 @@ h4.title{
 	text-shadow: 1px 1px 2px black;
 	text-align: justify; /*Justify stretches the lines so each gap has equal width.*/
 	float:middle;
+	text-align:center;
 }
 	
 
 body.background{
-	background-image: url(background.jpg); 
+	background-image: url(img/background.jpg); 
 	background-attachment: fixed; /*This makes the background NOT move when you scroll, and doesn't leave any loose corners.*/
 	background-size: cover; /*This stretches or shrinks the background image so that even if the image isn't an amazing resolution, it'll still look okay. */
 }

@@ -1,12 +1,12 @@
 /*styles.css*/
 
 
-h2.header2{
+h2.header2{ /* AA */
 	color: white;
 	text-shadow: 1px 1px 2px black; /*Even on a darker background the white text can be hard to see, so I added text shadow to make it more visible.*/
 }
 
-h3.header3{
+h3.header3{ /* AA */
 	color: white;
 	text-shadow: 1px 1px 2px black;
 }
@@ -31,7 +31,7 @@ p.mainText{
 	
 
 body.background{
-	background-image: url(background.jpg);
+	background-image: url(img/background.jpg);
 	background-attachment: fixed; /*This makes the background NOT move when you scroll, and doesn't leave any loose corners.*/
 	background-size: cover; /*This stretches or shrinks the background image so that even if the image isn't an amazing resolution, it'll still look okay. */
 }   
@@ -62,7 +62,7 @@ body.background{
 
 /* This adds a colored box to the navbar button of the page you're currently on so that you know what part of the website you're in. */
 .navigation .home {
-  background-color: #222222;
+  background-color: #04AA6D;
   color: white;
 }
 
