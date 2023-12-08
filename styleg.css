@@ -1,16 +1,29 @@
 /*styleg.css*/
+article {
+    padding: 15px;
+    background-color: #167ac6;
+    border-radius: 5px;
+    border-style: solid;
+	opacity: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: white;
+} 
 
 h2.header2{
 	color: white;
 	text-shadow: 1px 1px 2px black; /*Even on a darker background the white text can be hard to see, so I added text shadow to make it more visible.*/
-	text-align-last: center;
-	text-align: center;
+	float:middle;
 }
 
 h3.header3{
 	color: white;
 	text-shadow: 1px 1px 2px black;
-	text-align-last: center;
+	float:middle;
 }
 
 h1.title{
@@ -29,7 +42,7 @@ h4.title{
 	color: white;
 	text-shadow: 1px 1px 2px black;
 	text-align: justify; /*Justify stretches the lines so each gap has equal width.*/
-	text-align-last: center;
+	float:middle;
 	text-align:center;
 }
 	
@@ -38,6 +51,16 @@ body.background{
 	background-image: url(img/background.jpg); 
 	background-attachment: fixed; /*This makes the background NOT move when you scroll, and doesn't leave any loose corners.*/
 	background-size: cover; /*This stretches or shrinks the background image so that even if the image isn't an amazing resolution, it'll still look okay. */
+	color: white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    opacity: 100%;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 body.backgroundg { /* this adds the lovely background image for the gallery*/
@@ -88,7 +111,7 @@ body.backgroundg { /* this adds the lovely background image for the gallery*/
 #hidetask2{
 	display: none;
 }
-
+x
 #hidetask3{
 	display: none;
 }
@@ -130,6 +153,10 @@ img.image4 {
 	height: 100%
 }
 
+form.containerlogin {
+	align-items: center;
+}
+
 .question-container {
     max-width: 600px;
     margin: auto;
@@ -137,7 +164,7 @@ img.image4 {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-	text-align-last: center;
+	float:middle;
 	text-align: justify;
 }
 
@@ -162,7 +189,7 @@ img.image4 {
 }
 
 .question {
-	text-align-last: center;
+	float:middle;
 }
 
 /*Making a border between the images and background mitigates the sharp colour-contrast and also just looks nice.*/  
@@ -216,4 +243,50 @@ img.image4 {
 	margin: 14px 16px;
 	width: 100%;
 	height: 100%
+}
+
+.containerlogin {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	align-items: center;
+  }
+}
+
+.form-box {
+	align-items: center;
+	margin: 14px 16px;
+	width: 100%;
+	height: 100%
+}
+
+.row g-3 align-items-center {
+	align-itmes: center;
+	float: center;
+	
+	
+input[type=text], input[type=name] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+color: blue;
+}
+
+
+input[type=text]:focus, input[type=name]:focus, input[type=question]:focus{
+  background-color: #ddd;
+  outline: none;
+  color: white;
+
+}
+input[type=question] {
+    width: auto;
+    height: 100px;
+	color: blue;
+
+}
+.container {
+  padding: 16px;
 }
