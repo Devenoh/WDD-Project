@@ -1,96 +1,129 @@
-/* gallery.css */
 
-body.backgroundg { /* this adds the lovely background image for the gallery*/
-	background-image: url(img/backgroundone.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+h1.title{ /*this is to change the font of the title*/
+	color: #75FFA7;
+	text-shadow: 1px 1px 2px green;
+	font-family: 'Halogen Gas Lights', sans-serif;
 }
 
-/* the navigation tags allows the user to navigate the site with a click of the button */
-.navigation {
-  background-color: transparent;
-  overflow: hidden; /*This makes overflow content clipped and invisible, also pushes the header down so that it makes the navbar look longer than it actually is.*/
-					/*In all honesty this probably isn't the correct way to do this, but it works for this specific purpose.*/
+h2{
+	color: white;
 }
 
-/* This is the styling for the links in the Navigation Bar. */
-.navigation a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+h4.title{ /*same again here*/
+	color: #75FFA7;
+	text-shadow: 1px 1px 2px green;
+	font-family: 'Halogen Gas Lights', sans-serif;                
+}                                                                 
+																
+body.background { /*this add a background image*/                 
+	background-image: url("background.jpg");                      
+	background-attachment: fixed;                                 
+	background-size: cover;                                       
+}                                                                 
+																
+.navigation { /*this is for the nav bar*/                         
+  background-color: transparent;                                  
+  overflow: hidden;                                               
+}                                                                 
+																
+.navigation a { /*and again here*/                                
+  float: left;                                                    
+  color: #f2f2f2;                                                 
+  text-align: center;                                             
+  padding: 14px 16px;                                             
+  text-decoration: none;                                          
+  font-size: 17px;                                                
 }
 
-/* This makes the text glow when you hover over it by using text-shadow and actions in CSS. */
 .navigation a:hover {
   background-color: transparent;
   color: white;
   text-shadow: 1px 1px 2px green;
 }
 
-/* This adds a colored box to the navbar button of the page you're currently on so that you know what part of the website you're in. */
 .navigation a.home {
   background-color: #04AA6D;
   color: white;
 }
 
-.navigation a.blacknav {
- 
-  color: black;
+.navigation a.blacknav { /*this is for changing the colour of the links*/
+  color: white;
 }
 
-
-#hidetask{
-	display: none;
+#hidetask, /*this for hiding my images*/
+#hidetask2,
+#hidetask3,
+#hidetask4 {
+  display: none;
 }
 
-#hidetask2{
-	display: none;
+img.image1{ /*thefollowing tags are for stylibg the images*/
+	  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
 }
+img.image2{
+	  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
 
-#hidetask3{
-	display: none;
 }
-
-#hidetask4{
-	display: none;
-}
-
-
-/*these image tags give the images a boarder so they pop and arent all ontop of one another*/
-img.image1 { 
-	border: grey 6px outset;
-	float: left;
+img.image3{
+	  border: grey 6px outset;
 	margin: 14px 16px;
-	width: 100%;
-	height: 100%
+	width: 446px; 
+	height: 346px; 
 }
 
-img.image2 { 
-	border: grey 6px outset;
-	float: right;
-	margin: 14px 16px;
-	width: 100%;
-	height: 100%
+img.image4{
+  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
 }
 
-img.image3 { 
-	border: grey 6px outset;
-	float: left;
-	margin: 14px 16px;
-	width: 100%;
-	height: 100%
-}
-
-img.image4 { 
-	border: grey 6px outset;
-	float: right;
-	margin: 14px 16px;
-	width: 100%;
-	height: 100%
+p {
+	color:white;
 }
 
 
 
+⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡠⠤⠔⠒⠒⠉⠉⠉⣆
+⠀⠀⡼⠀⠈⠉⠉⠓⠒⠦⢤⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⣀⡤⠖⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹
+⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠺⣅⠀⠀⠀⠀⠀⠈⠑⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⢠⡖⠉⣀⣠⠴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎
+⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠃
+⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀
+⠀⣀⡹⡄⠰⠤⢤⠤⠤⠤⣤⣤⣤⣤⣦⠀⠀⠀⠀⠀⠀⣶⣶⣶⣶⣶⠒⠒⠒⢲⠒⠒⠂⠀⡞⢀⡀
+⢠⡏⠉⢷⣄⠀⢸⠀⠀⢠⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠠⣿⣿⣿⣿⣿⡁⠀⠀⢸⡇⠀⠠⡞⠋⠁⣇
+⠀⢧⠀⠀⠉⠀⢸⡄⠀⠀⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⡿⠀⠀⠀⢸⠇⠀⠀⠀⠀⢀⡇
+⠀⠈⢧⠀⠀⠀⠈⠑⠀⠀⠘⠿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠟⠁⠀⠀⠀⡟⠀⠀⠀⠀⢀⡞⠀
+⠀⠀⠀⡳⢄⢶⠆⣠⠷⠀⠀⠀⠀⠀⠒⠶⠾⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡆⢠⠄⣠⠞⠀⠀
+⠀⣠⠋⠀⠊⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠇⠀⠀⠀⠀⠚⠃⠗⠃⠰⢇⠀⠀⠀
+⢰⡃⠀⠀⣠⡄⠀⠀⠀⠀⠀⢦⣀⣀⣀⠤⠤⠄⠒⠒⠒⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⡀⠀
+⠀⠉⠉⠉⠁⠉⠒⠤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣄⡀⠀⠀⠀⢻⡀
+⠀⠀⠀⠀⠀⠀⠀⢠⠤⢈⣁⡲⠶⠇⠀⠀⠀⠀⠀⠀⠤⠤⠤⠤⡤⠒⠒⠊⠉⠁⠀⠉⠉⠒⠒⠊⠁
+⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠎⠀⣠⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⠖⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠀
+
+
+/*You like coding using Notepad++, dont you*/
+
+
+
+
+
+
+/* Emer this is jokes, dont take away marks for my art <3 */⠀⠀⠀⠀⠀⠀
