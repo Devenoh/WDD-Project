@@ -1,0 +1,128 @@
+
+h1.title{ /* this tag allows me to target the text in h1 and change the colour */
+	color: #75FFA7;
+	text-shadow: 1px 1px 2px green;
+	font-family: 'Halogen Gas Lights', sans-serif;
+}
+
+h2{ /* this tag allows me to target the text in h2 and change the colour */
+	color: white;
+}
+
+h4.title{ /* this tag allows me to target the text in h4 and change the colour */
+	color: #75FFA7;
+	text-shadow: 1px 1px 2px green;
+	font-family: 'Halogen Gas Lights', sans-serif;    
+}                                                    
+
+h4.title2{ /*same again here*/
+	color: white;
+	text-shadow: 1px 1px 2px black;    
+}                                                            
+																
+body.background { /*this add a background image*/                 
+	background-image: url("img/background.jpg");                      
+	background-attachment: fixed;                                 
+	background-size: cover;                                       
+}                                                                 
+																
+.navigation { /*this is for styling the nav bar*/                         
+  background-color: transparent;                                  
+  overflow: hidden;                                               
+}                                                                 
+																
+.navigation a { /*and again here*/                                
+  float: left;                                                    
+  color: #f2f2f2;                                                 
+  text-align: center;                                             
+  padding: 14px 16px;                                             
+  text-decoration: none;                                          
+  font-size: 17px;                                                
+}
+
+.navigation a:hover { /*and again here*/
+  background-color: transparent;
+  color: white;
+  text-shadow: 1px 1px 2px green;
+}
+
+.navigation a.home { /*here too*/
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navigation a.blacknav { /*this is for changing the colour of the links*/
+  color: white;
+}
+
+#hidetask, /*these for hiding my images*/
+#hidetask2,
+#hidetask3,
+#hidetask4 {
+  display: none;
+}
+
+img.image1{ /*the following tags are for styling the images*/
+	  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
+}
+img.image2{
+	  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
+
+}
+img.image3{
+	  border: grey 6px outset;
+	margin: 14px 16px;
+	width: 446px; 
+	height: 346px; 
+}
+
+img.image4{
+  border: grey 6px outset;
+  margin: 14px 16px;
+  width: 446px; 
+  height: 346px; 
+  
+}
+
+p { /*this is for change the colour of my text in my p tags*/
+	color:white;
+}
+
+
+
+⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡠⠤⠔⠒⠒⠉⠉⠉⣆
+⠀⠀⡼⠀⠈⠉⠉⠓⠒⠦⢤⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⣀⡤⠖⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹
+⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠺⣅⠀⠀⠀⠀⠀⠈⠑⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⢠⡖⠉⣀⣠⠴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎
+⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠃
+⠀⠀⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀
+⠀⣀⡹⡄⠰⠤⢤⠤⠤⠤⣤⣤⣤⣤⣦⠀⠀⠀⠀⠀⠀⣶⣶⣶⣶⣶⠒⠒⠒⢲⠒⠒⠂⠀⡞⢀⡀
+⢠⡏⠉⢷⣄⠀⢸⠀⠀⢠⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠠⣿⣿⣿⣿⣿⡁⠀⠀⢸⡇⠀⠠⡞⠋⠁⣇
+⠀⢧⠀⠀⠉⠀⢸⡄⠀⠀⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⡿⠀⠀⠀⢸⠇⠀⠀⠀⠀⢀⡇
+⠀⠈⢧⠀⠀⠀⠈⠑⠀⠀⠘⠿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠟⠁⠀⠀⠀⡟⠀⠀⠀⠀⢀⡞⠀
+⠀⠀⠀⡳⢄⢶⠆⣠⠷⠀⠀⠀⠀⠀⠒⠶⠾⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡆⢠⠄⣠⠞⠀⠀
+⠀⣠⠋⠀⠊⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠇⠀⠀⠀⠀⠚⠃⠗⠃⠰⢇⠀⠀⠀
+⢰⡃⠀⠀⣠⡄⠀⠀⠀⠀⠀⢦⣀⣀⣀⠤⠤⠄⠒⠒⠒⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⡀⠀
+⠀⠉⠉⠉⠁⠉⠒⠤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣄⡀⠀⠀⠀⢻⡀
+⠀⠀⠀⠀⠀⠀⠀⢠⠤⢈⣁⡲⠶⠇⠀⠀⠀⠀⠀⠀⠤⠤⠤⠤⡤⠒⠒⠊⠉⠁⠀⠉⠉⠒⠒⠊⠁
+⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠎⠀⣠⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⠖⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠀
+
+
+/* You like coding using Notepad++, dont you? */
+/* Emer this is jokes, dont take away marks for my art <3 */⠀⠀⠀⠀⠀⠀
