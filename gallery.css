@@ -1,15 +1,15 @@
 
-h1.title{ /*this is to change the font of the title*/
+h1.title{ /* this tag allows me to target the text in h1 and change the colour */
 	color: #75FFA7;
 	text-shadow: 1px 1px 2px green;
 	font-family: 'Halogen Gas Lights', sans-serif;
 }
 
-h2{
+h2{ /* this tag allows me to target the text in h2 and change the colour */
 	color: white;
 }
 
-h4.title{ /*same again here*/
+h4.title{ /* this tag allows me to target the text in h4 and change the colour */
 	color: #75FFA7;
 	text-shadow: 1px 1px 2px green;
 	font-family: 'Halogen Gas Lights', sans-serif;    
@@ -26,7 +26,7 @@ body.background { /*this add a background image*/
 	background-size: cover;                                       
 }                                                                 
 																
-.navigation { /*this is for the nav bar*/                         
+.navigation { /*this is for styling the nav bar*/                         
   background-color: transparent;                                  
   overflow: hidden;                                               
 }                                                                 
@@ -40,13 +40,13 @@ body.background { /*this add a background image*/
   font-size: 17px;                                                
 }
 
-.navigation a:hover {
+.navigation a:hover { /*and again here*/
   background-color: transparent;
   color: white;
   text-shadow: 1px 1px 2px green;
 }
 
-.navigation a.home {
+.navigation a.home { /*here too*/
   background-color: #04AA6D;
   color: white;
 }
@@ -55,14 +55,14 @@ body.background { /*this add a background image*/
   color: white;
 }
 
-#hidetask, /*this for hiding my images*/
+#hidetask, /*these for hiding my images*/
 #hidetask2,
 #hidetask3,
 #hidetask4 {
   display: none;
 }
 
-img.image1{ /*thefollowing tags are for stylibg the images*/
+img.image1{ /*the following tags are for styling the images*/
 	  border: grey 6px outset;
   margin: 14px 16px;
   width: 446px; 
@@ -92,7 +92,7 @@ img.image4{
   
 }
 
-p {
+p { /*this is for change the colour of my text in my p tags*/
 	color:white;
 }
 

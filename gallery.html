@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.cdnfonts.com/css/halogen-gas-lights" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="gallery.css">
-  <title>Vineta Gallery</title>
-  <script src="JS/gallery.js"></script> <!-- this is for my external js -->
-</head>
-<body class="background">
-  <div class="container-fluid">
-    <div class="navigation">
-      <div id="navigationLogo">
-        <a href="index.html"><h4 class="title">Vineta</h4></a>
-      </div>
-      <a class="blacknav" href="index.html">Home</a> 		 <!-- these are all the links and anchor tags -->
-      <a class="blacknav" href="game.html">Game</a>  		 <!-- these are all the links and anchor tags -->
-      <a class="home" href="#">Gallery</a>           		 <!-- these are all the links and anchor tags -->
-      <a class="blacknav" href="resources.html">Support</a>  <!-- these are all the links and anchor tags -->
-    </div>                                          		 <!-- these are all the links and anchor tags -->
-  </div>                                                                                              
-																									  
-  <div class="row text-center">                                                                       
-    <div class="col-sm-12">                                                                           
-      <h1 class="title">Vineta</h1>                                                                   
-      <h2 class="header2">Our Gallery</h2>              
-	  <h4 class="title2">Take a look at our gallery, showcasing great steps forward in hydroelectricity and a 
-	  more sustainable future.</h4>
-	  <br>
-	  <h4 class="title2">Double-click the buttons to load the images.</h4>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-2"> <!-- these columns are to space things out -->
-      <p>Image One showcases a concept for a Pumped-Storage plant in the United States with enhanced turbines, sponsored by Spirit Of Ireland. This design features an optional visitor's centre and elevator to the main power station.</p>
-	  <br>
-      <br>
-      <button onclick="showhide()">image one</button> <!-- the buttons are to show hidden images and hide them again -->
-      <p></p>
-    </div>
-
-    <div class="col-sm-4">
-      <div id="hidetask">
-        <img class="image1" src="img/gallery1.jpeg" alt="Image1">
-      </div>
-    </div>
+	<head>
+		<meta charset="utf-8"> <!-- these meta tags are to allow more symbols/characters to be used while imputing an answer -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.cdnfonts.com/css/halogen-gas-lights" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="gallery.css">
+		<title>Vineta Gallery</title>
+		<script src="JS/gallery.js"></script> <!-- this is for my javascript file -->
+	</head>
+	<body class="background"> <!-- the class tag helps me when im using css, it allows me to target certain things such as background for example -->
+		<div class="container-fluid">
+			<div class="navigation">
+			<div id="navigationLogo"> <!-- the id tag also works the same as class but it can only be used once -->
+				<a href="index.html"><h4 class="title">Vineta</h4></a>
+			</div>
+				<a class="blacknav" href="index.html">Home</a> 		 <!-- these are all the links and anchor tags, anchor tags allow you to travel from one page to the other -->
+				<a class="blacknav" href="game.html">Game</a>  		 
+				<a class="home" href="#">Gallery</a>           		 
+				<a class="blacknav" href="resources.html">Support</a>  
+			</div>                                          		 
+		</div>                                                                                              
+																											
+		<div class="row text-center">     <!-- this adds rows, it also centers it -->                                                                   
+			<div class="col-sm-12">       <!-- all columns must add up to twelve, for example 12=12, and later on you will see 2+4+2+4=12 -->                                                                     
+				<h1 class="title">Vineta</h1>                                                                   
+				<h2 class="header2">Our Gallery</h2>              
+				<h4 class="title2">Take a look at our gallery, showcasing great steps forward in hydroelectricity and a 
+				more sustainable future.</h4>
+				<br> <!-- the br tags add a break in the code and spaces things out -->
+				<h4 class="title2">Double-click the buttons to load the images.</h4>
+			</div>
+		</div>
 		
-    <div class="col-sm-2">
-		<p> A reservoir in the Silvermines Mountains will be used to generate green renewable electricity. It is estimated the electricity generated from the plant will be enough to power 200,000 homes.
-		</p>
-      <br>
-      <br>
-      <button onclick="showhide2()">image two</button>
-      <p></p>
-    </div>
-
-    <div class="col-sm-4">
-      <div id="hidetask2">
-        <img class="image2" src="img/gallery2.jpeg" alt="Image1">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-2">
-		<p>Image three shows construction work in Ardnacrusha. The Scheme was one of the largest engineering projects of its day.  The hydroelectric plant on the River Shannon in County Clare can be described as a milestone in Irish history.
-		</p>
-      <br>
-      <br>
-      <button onclick="showhide3()">Image three</button>
-      <p></p>
-    </div>
-
-    <div class="col-sm-4">
-      <br>
-      <div id="hidetask3">
-        <img class="image3" src="img/gallery3.jpeg" alt="Image1">
-      </div>
-    </div>
-
-    <div class="col-sm-2">
-		<p>A picture taken in 1927,  of the Ardnacrusha construction site, being worked on by both Irish and German engineers, as part of the hydroelectric scheme that led to the foundation of the ESB.
-		</p>
-      <br>
-      <br>
-      <button onclick="showhide4()">image four</button>
-    </div>
-
-    <div class="col-sm-4">
-      <br>
-      <div id="hidetask4">
-        <img class="image4" src="img/gallery4.jpeg" alt="Image1">
-      </div>
-    </div>
-  </div>
-</body>
+		<!-- my code from here down are all identical as they are for each of my four images and buttons -->
+		
+		<div class="row"> <!-- this add a new row -->
+			<div class="col-sm-2"> <!-- like i said earlier, all columns need to add up to 12, the number represents the size of the column, so 1 would be the smallest and 12 would be the biggest -->
+				<p>Image One showcases a concept for a Pumped-Storage plant in the United States with enhanced turbines, sponsored by Spirit Of Ireland. This design features an optional visitor's centre and elevator to the main power station.</p>
+				<br>
+				<br>
+				<button onclick="showhide()">image one</button> <!-- the buttons are to show hidden images and hide them again -->
+				        
+			</div>
+		
+			<div class="col-sm-4">
+			<div id="hidetask">
+				<img class="image1" src="img/gallery1.jpeg" alt="Image1"> <!-- the image tag shows an image -->
+			</div>
+			</div>
+				
+			<div class="col-sm-2">
+				<p> A reservoir in the Silvermines Mountains will be used to generate green renewable electricity. It is estimated the electricity generated from the plant will be enough to power 200,000 homes.
+				</p>
+				<br>
+				<br>
+				<button onclick="showhide2()">image two</button>
+				
+			</div>
+		
+			<div class="col-sm-4">
+			<div id="hidetask2">
+				<img class="image2" src="img/gallery2.jpeg" alt="Image1">
+			</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-2">
+				<p>Image three shows construction work in Ardnacrusha. The Scheme was one of the largest engineering projects of its day.  The hydroelectric plant on the River Shannon in County Clare can be described as a milestone in Irish history.
+				</p>
+				<br>
+				<br>
+				<button onclick="showhide3()">Image three</button>
+				
+			</div>
+		
+			<div class="col-sm-4">
+			<br>
+			<div id="hidetask3">
+				<img class="image3" src="img/gallery3.jpeg" alt="Image1">
+			</div>
+			</div>
+		
+			<div class="col-sm-2">
+				<p>A picture taken in 1927,  of the Ardnacrusha construction site, being worked on by both Irish and German engineers, as part of the hydroelectric scheme that led to the foundation of the ESB.
+				</p>
+				<br>
+				<br>
+				<button onclick="showhide4()">image four</button>
+			</div>
+		
+			<div class="col-sm-4">
+			<br>
+			<div id="hidetask4">
+				<img class="image4" src="img/gallery4.jpeg" alt="Image1">
+			</div>
+			</div>
+		</div>
+	</body>
 </html>
